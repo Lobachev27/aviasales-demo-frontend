@@ -26,6 +26,8 @@ const Title = styled.h2`
   font-size: 32px;
   text-align: center;
   color: #5c5c5c;
+  padding: 0;
+  margin:0;
 `;
 
 const Slider = styled.div`
