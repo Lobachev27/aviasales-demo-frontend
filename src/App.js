@@ -6,6 +6,7 @@ import Directions from "./Directions";
 import Prices from "./Prices";
 import Partners from "./Partners";
 import Subscribe from "./Subscribe";
+import Offer from "./Offer";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Prices />
         <Partners />
 		<Subscribe />
+		<Offer />
       </div>
     );
   }
