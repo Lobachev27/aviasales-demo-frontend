@@ -8,6 +8,7 @@ import Partners from "./Partners";
 import Subscribe from "./Subscribe";
 import Offer from "./Offer";
 import Help from "./Help";
+import MobileApp from "./MobileApp";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <Subscribe />
         <Offer />
         <Help />
+        <MobileApp />
       </div>
     );
   }
