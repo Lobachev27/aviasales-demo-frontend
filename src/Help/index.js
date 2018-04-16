@@ -9,7 +9,6 @@ const Help = styled.section`
   padding-top: 20px;
   padding-bottom: 24px;
   background: #fff;
-  min-width: 320px;
 `;
 
 const Title = styled.h5`
@@ -28,7 +27,7 @@ const Text = styled.p`
   color: #4a4a4a;
   margin-top: 12px;
   margin-bottom: 16px;
-  
+
   @media (min-width: 992px) {
     margin-bottom: 24px;
   }

@@ -47,7 +47,6 @@ const Offer = styled.div`
   );
   color: #ffffff;
   padding-bottom: 24px;
-  min-width: 320px;
 `;
 
 const Title = styled.h2`
@@ -56,11 +55,11 @@ const Title = styled.h2`
   font-weight: 500;
   padding: 16px 0 24px;
   margin: 0;
-  
+
   @media (min-width: 768px) {
     font-size: 30px;
     line-height: 42px;
-	padding: 24px 0 20px;
+    padding: 24px 0 20px;
   }
 `;
 
@@ -72,11 +71,11 @@ const Footer = styled.div`
   line-height: 20px;
   font-weight: 300;
   margin-top: 20px;
-  
+
   @media (min-width: 768px) {
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
   }
 `;
 
@@ -90,7 +89,7 @@ const Link = styled.a`
 
 const StarNote = styled.div`
   margin-top: 8px;
-  
+
   @media (min-width: 768px) {
     margin-top: 0;
   }

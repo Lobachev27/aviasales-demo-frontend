@@ -9,7 +9,11 @@ import flag_md from "./flag-md.png";
 
 const bestPrices = [
   {
-    destination: { city: "Симферополь (Крым)", country: "РОССИЯ", flag: flag_ru },
+    destination: {
+      city: "Симферополь (Крым)",
+      country: "РОССИЯ",
+      flag: flag_ru
+    },
     prices: [
       { origin: "Москвы", price: 4813 },
       { origin: "Санкт-Петербурга", price: 7857 },
@@ -42,7 +46,6 @@ const bestPrices = [
 
 const Prices = styled.div`
   background: linear-gradient(180deg, #f8fcff 0%, #ffffff 100%);
-  min-width: 320px;
   padding-top: 32px;
   margin: 0;
 `;
@@ -72,14 +75,14 @@ const Title = styled.h2`
 const SplitLine = styled.div`
   border-bottom: 1px dashed #afbec6;
   margin: 0px;
-  
+
   @media (min-width: 1200px) {
     border: none;
     border-right: 1px dashed #afbec6;
     min-height: 80%;
     width: 1px;
     margin: 24px auto;
-  };
+  }
 `;
 
 const Info = styled.p`
@@ -88,10 +91,10 @@ const Info = styled.p`
   line-height: 24px;
   font-weight: 300;
   padding: 0 10px;
-  
+
   @media (min-width: 768px) {
-	padding: 0;
-  };
+    padding: 0;
+  }
 `;
 
 const Offer = styled.p`
@@ -101,14 +104,14 @@ const Offer = styled.p`
   font-weight: 300;
   color: #a0b0b9;
   padding: 0 10px 30px;
-  
+
   @media (min-width: 768px) {
-	padding: 0 0 60px;
-  };
-  
+    padding: 0 0 60px;
+  }
+
   @media (min-width: 1200px) {
-	padding: 0 0 75px;
-  };
+    padding: 0 0 75px;
+  }
 `;
 
 export default () => {
@@ -134,7 +137,7 @@ export default () => {
           <div className="col-xs-12 col-md-10 col-xl">
             <SplitLine />
           </div>
-              <div className="col-xs-12 col-md-10 col-xl-3">
+          <div className="col-xs-12 col-md-10 col-xl-3">
             <BestPrice data={bestPrices[2]} />
           </div>
           <div className="hidden-xs col-xl-1" />

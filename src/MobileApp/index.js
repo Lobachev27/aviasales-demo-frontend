@@ -20,7 +20,6 @@ const MobileApp = styled.div`
   color: #ffffff;
   padding: 0;
   margin: 0;
-  min-width: 320px;
 `;
 
 const Title = styled.h2`
@@ -28,39 +27,45 @@ const Title = styled.h2`
   line-height: 28px;
   font-weight: 500;
   margin: 24px 0 19px;
-  
+
   @media (min-width: 768px) {
     text-align: left;
-	font-size: 32px;
+    font-size: 32px;
     line-height: 40px;
-	margin: 46px 50px 16px 0;
-  };
-  
+    margin: 46px 50px 16px 0;
+  }
+
   @media (min-width: 1200px) {
-   	margin: 66px 0 19px;
-  };
+    margin: 66px 0 19px;
+  }
 `;
 
 const Rating = styled.div`
   margin-bottom: 36px;
-  
+
   @media (min-width: 768px) {
     text-align: left;
-	margin-bottom: 40px;
-  };
+    margin-bottom: 40px;
+  }
 `;
 
 const Picture = styled.div`
   position: relative;
+  margin-left: -10px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
 `;
 
 const Img = styled.img`
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 162px;
+  width: 152px;
   margin: 0;
   padding: 0;
+
   @media (min-width: 768px) {
     width: 234px;
   }
@@ -73,16 +78,18 @@ const AppList = styled.div`
   padding-bottom: 60px;
   padding-left: 0;
   text-align: center;
-  
+  margin-left: -10px;
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: flex-start;
     padding-bottom: 55px;
-  };
-  
+    margin-left: 0;
+  }
+
   @media (min-width: 992px) {
-	padding-bottom: 68px;
-  };
+    padding-bottom: 68px;
+  }
 `;
 
 const AppLink = styled.a`
@@ -94,13 +101,14 @@ const AppLink = styled.a`
   font-size: 14px;
   line-height: 25px;
   font-weight: 300;
-  
+
   @media (min-width: 768px) {
     margin-right: 40px;
-	padding: 0;
-  } &:hover {
+    padding: 0;
+  }
+  &:hover {
     text-decoration: underline;
-  };
+  }
 `;
 
 const Text = styled.p`
@@ -111,16 +119,16 @@ const Text = styled.p`
 
 const SplitLine = styled.div`
   display: none;
-  
+
   @media (min-width: 768px) {
     display: block;
-	position: relative;
+    position: relative;
     left: -24px;
     border: none;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     min-height: 100%;
     width: 1px;
-  };
+  }
 `;
 
 export default () => {
@@ -139,24 +147,24 @@ export default () => {
         <div className="row bottom-xs">
           <div className="col-xs-6 col-md-4 col-xl-3 col-xl-offset-1">
             <Picture>
-		    	    <Img src={phone} alt="" />
-		        </Picture>
+              <Img src={phone} alt="" />
+            </Picture>
           </div>
-    		  <div className="col-xs-6 col-md-8 col-xl">
+          <div className="col-xs-6 col-md-8 col-xl">
             <AppList>
               <AppLink href="#">
                 <img src={apple} alt="" />
-		        		<Text>iPhone или iPad</Text>
+                <Text>iPhone или iPad</Text>
               </AppLink>
-			        <SplitLine />
+              <SplitLine />
               <AppLink href="#">
-                <img src={android} alt="" /> 
-			        	<Text>Android</Text>
+                <img src={android} alt="" />
+                <Text>Android</Text>
               </AppLink>
-			        <SplitLine />
+              <SplitLine />
               <AppLink href="#">
-                <img src={windows} alt="" /> 
-		        		<Text>Windows Phone</Text>
+                <img src={windows} alt="" />
+                <Text>Windows Phone</Text>
               </AppLink>
             </AppList>
           </div>

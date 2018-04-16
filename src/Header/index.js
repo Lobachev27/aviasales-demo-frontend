@@ -9,7 +9,6 @@ import popdown from "./popdn.svg";
 
 const Header = styled.header`
   display: flex;
-  min-width: 320px;
   padding-bottom: 88px;
   background: linear-gradient(
     148.48deg,
@@ -25,7 +24,7 @@ const Header = styled.header`
     padding-bottom: 122px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     padding-bottom: 254px;
   }
 `;
@@ -72,7 +71,7 @@ const Title = styled.h1`
     margin-top: 83px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     line-height: 48px;
     font-size: 40px;
     margin-top: 215px;
@@ -95,7 +94,7 @@ const SubTitle = styled.h2`
     line-height: 28px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     font-size: 24px;
     line-height: 28px;
   }
@@ -119,7 +118,7 @@ const InputBig = styled.div`
     flex-basis: 50%;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     flex-basis: 23%;
   }
 `;
@@ -131,7 +130,7 @@ const InputSmall = styled.div`
     flex-basis: 25%;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     flex-basis: 15.5%;
   }
 `;
@@ -158,7 +157,7 @@ const PlaceInput = styled.input`
     color: #a0b0b9;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     padding: 18px 0 18px 10px;
   }
 `;
@@ -172,7 +171,7 @@ const SwapPlaces = styled.button`
   padding: 0;
   background: url(${arrows}) center no-repeat;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     margin-right: 15px;
     margin-left: 10px;
   }
@@ -191,7 +190,7 @@ const Calendar = styled.button`
   padding: 0;
   background: url(${calendar}) center no-repeat;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     margin-right: 15px;
     margin-left: 10px;
   }
@@ -208,7 +207,7 @@ const PaxButton = styled.button`
   text-align: left;
   position: relative;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     padding: 18px 0 18px 10px;
   }
 `;
@@ -224,7 +223,7 @@ const PopDownMark = styled.img`
   padding: 28px 0 27px 10px;
   background: url(${popdown}) center no-repeat;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     right: 12px;
   }
 `;
@@ -247,7 +246,7 @@ const SubmitButton = styled.button`
     font-size: 28px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     margin-top: 48px;
     padding: 16px;
   }

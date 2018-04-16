@@ -73,7 +73,6 @@ const destination = [
 
 const Directions = styled.div`
   background: #f8fcff;
-  min-width: 320px;
   padding-top: 40px;
 
   @media (min-width: 768px) {
@@ -100,7 +99,7 @@ const Title = styled.h2`
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 36px;
-	padding: 0px 10px;
+    padding: 0px 10px;
   }
 `;
 
@@ -155,7 +154,7 @@ const WhiteCircle = styled.div`
   box-shadow: 0px 4px 16px rgba(74, 74, 74, 0.12);
   align-items: center;
   justify-content: center;
-  
+
   @media (min-width: 768px) {
     margin: 48px auto 12px auto;
   }
@@ -163,106 +162,106 @@ const WhiteCircle = styled.div`
 
 const Destinations = styled.div`
   padding-top: 18px;
-  
+
   @media (min-width: 768px) {
     pading-top: 34px;
   }
-  
-  @media (min-width: 1024px) {
+
+  @media (min-width: 992px) {
     padding-top: 28px;
   }
 `;
 
 export default () => (
-	<Directions>
-		<div className="container">
-			<div className="row center-xs">
-				<div className="col-xs-12 col-md-8 col-lg-6">
-					<Compass src={compass} alt="compass" />
-					<Title>
-						Популярные направления перелетов из города{" "}
-						<OriginCity>
-							Москва <Img edit src={pen} />
-						</OriginCity>
-					</Title>
-				</div>
-			</div>
-			<div className="row">
-				<div className="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-					<Ways>
-						<div className="col-xs-4 col-md-2">
-							<Button>
-								<WhiteCircle>
-									<Img src={earth} />
-								</WhiteCircle>
-								КУДА<br />УГОДНО
-							</Button>
-						</div>
-						<div className="col-xs-4 col-md-2">
-							<Button>
-								<WhiteCircle>
-									<Img src={palm} />
-								</WhiteCircle>
-								CОЛНЦЕ<br />И МОРЕ
-							</Button>
-						</div>
-						<div className="col-xs-4 col-md-2">
-							<Button>
-								<WhiteCircle>
-									<Img src={cart} />
-								</WhiteCircle>
-								ШОПИНГ,<br />ГОРОД
-							</Button>
-						</div>
-						<div className="col-xs-4 col-md-2">
-							<Button>
-								<WhiteCircle>
-									<Img src={temple} />
-								</WhiteCircle>
-								КУЛЬТУРА<br />И ИСТОРИЯ
-							</Button>
-						</div>
-						<div className="col-xs-4 col-md-2">
-							<Button>
-								<WhiteCircle>
-									<Img src={glass} />
-								</WhiteCircle>
-								НОЧНАЯ<br />ЖИЗНЬ
-							</Button>
-						</div>
-						<div className="col-xs-4 col-md-2">
-							<Button>
-								<WhiteCircle>
-									<Img src={baby} />
-								</WhiteCircle>
-								ОТДЫХ<br />С ДЕТЬМИ
-							</Button>
-						</div>
-					</Ways>
-				</div>
-			</div>
-			<Destinations>
-				<div className="row center-md">
-					<div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
-						<Destination destination={destination[0]} />
-					</div>
-					<div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
-						<Destination destination={destination[1]} />
-					</div>
-					<div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
-						<Destination destination={destination[2]} />
-					</div>
-					<div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
-						<Destination destination={destination[3]} />
-					</div>
-					<div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
-						<Destination destination={destination[4]} />
-					</div>
-					<div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
-						<Destination destination={destination[5]} />
-					</div>
-				</div>
-			</Destinations>	
-		</div>
-	</Directions>
+  <Directions>
+    <div className="container">
+      <div className="row center-xs">
+        <div className="col-xs-12 col-md-8 col-lg-6">
+          <Compass src={compass} alt="compass" />
+          <Title>
+            Популярные направления перелетов из города{" "}
+            <OriginCity>
+              Москва <Img edit src={pen} />
+            </OriginCity>
+          </Title>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+          <Ways>
+            <div className="col-xs-4 col-md-2">
+              <Button>
+                <WhiteCircle>
+                  <Img src={earth} />
+                </WhiteCircle>
+                КУДА<br />УГОДНО
+              </Button>
+            </div>
+            <div className="col-xs-4 col-md-2">
+              <Button>
+                <WhiteCircle>
+                  <Img src={palm} />
+                </WhiteCircle>
+                CОЛНЦЕ<br />И МОРЕ
+              </Button>
+            </div>
+            <div className="col-xs-4 col-md-2">
+              <Button>
+                <WhiteCircle>
+                  <Img src={cart} />
+                </WhiteCircle>
+                ШОПИНГ,<br />ГОРОД
+              </Button>
+            </div>
+            <div className="col-xs-4 col-md-2">
+              <Button>
+                <WhiteCircle>
+                  <Img src={temple} />
+                </WhiteCircle>
+                КУЛЬТУРА<br />И ИСТОРИЯ
+              </Button>
+            </div>
+            <div className="col-xs-4 col-md-2">
+              <Button>
+                <WhiteCircle>
+                  <Img src={glass} />
+                </WhiteCircle>
+                НОЧНАЯ<br />ЖИЗНЬ
+              </Button>
+            </div>
+            <div className="col-xs-4 col-md-2">
+              <Button>
+                <WhiteCircle>
+                  <Img src={baby} />
+                </WhiteCircle>
+                ОТДЫХ<br />С ДЕТЬМИ
+              </Button>
+            </div>
+          </Ways>
+        </div>
+      </div>
+      <Destinations>
+        <div className="row center-md">
+          <div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+            <Destination destination={destination[0]} />
+          </div>
+          <div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+            <Destination destination={destination[1]} />
+          </div>
+          <div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+            <Destination destination={destination[2]} />
+          </div>
+          <div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+            <Destination destination={destination[3]} />
+          </div>
+          <div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+            <Destination destination={destination[4]} />
+          </div>
+          <div className="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+            <Destination destination={destination[5]} />
+          </div>
+        </div>
+      </Destinations>
+    </div>
+  </Directions>
 );
