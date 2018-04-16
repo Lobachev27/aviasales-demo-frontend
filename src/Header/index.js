@@ -8,8 +8,10 @@ import calendar from "./calendar.svg";
 import popdown from "./popdn.svg";
 
 const Header = styled.header`
+  position: relative;
   display: flex;
-  padding-bottom: 88px;
+  align-items: center;
+  min-height: 100vh;
   background: linear-gradient(
     148.48deg,
     #00b0de 22.46%,
@@ -19,17 +21,11 @@ const Header = styled.header`
     #02abdb 33.81%,
     #196ebd 122.26%
   );
-
-  @media (min-width: 768px) {
-    padding-bottom: 122px;
-  }
-
-  @media (min-width: 992px) {
-    padding-bottom: 254px;
-  }
 `;
 
 const Logo = styled.div`
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,25 +52,26 @@ const Text = styled.span`
   }
 `;
 
+const Section = styled.div`
+  padding: 80px 0 80px;
+`;
+
 const Title = styled.h1`
   color: #fff;
   font-size: 20px;
   line-height: 23px;
   font-weight: 700;
   text-align: center;
-  margin-top: 47px;
-  margin-bottom: 0px;
+  margin: 0;
 
   @media (min-width: 768px) {
     line-height: 48px;
     font-size: 32px;
-    margin-top: 83px;
   }
 
   @media (min-width: 992px) {
     line-height: 48px;
     font-size: 40px;
-    margin-top: 215px;
   }
 `;
 
@@ -87,6 +84,7 @@ const SubTitle = styled.h2`
   text-align: center;
   color: #ffffff;
   margin-top: 8px;
+  margin-bottom: 0;
 
   @media (min-width: 768px) {
     display: block;
@@ -259,54 +257,59 @@ export default () => (
         <Image src={logo} alt="logo" />
         <Text> aviasales</Text>
       </Logo>
-      <Title>Поиск дешевых авиабилетов</Title>
-      <SubTitle>Лучший способ купить авиабилеты дешево</SubTitle>
-      <div className="row">
-        <div className="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-          <Form>
-            <InputBig>
-              <InputWrapper>
-                <PlaceInput defaultValue="Москва" placeholder="Город вылета" />
-                <IATACode>MOW</IATACode>
-                <SwapPlaces />
-              </InputWrapper>
-            </InputBig>
-            <InputBig>
-              <InputWrapper>
-                <PlaceInput value="" placeholder="Город прибытия" />
-                <IATACode />
-              </InputWrapper>
-            </InputBig>
-            <InputSmall>
-              <InputWrapper>
-                <PlaceInput value="" placeholder="Туда" />
-                <Calendar />
-              </InputWrapper>
-            </InputSmall>
-            <InputSmall>
-              <InputWrapper>
-                <PlaceInput value="" placeholder="Обратно" />
-                <Calendar />
-              </InputWrapper>
-            </InputSmall>
-            <InputBig>
-              <InputWrapper>
-                <PaxButton>
-                  1 пассажир, <PaxAdditional>эконом</PaxAdditional>
-                  <PopDownMark />
-                </PaxButton>
-              </InputWrapper>
-            </InputBig>
-          </Form>
+      <Section>
+        <div className="row">
+          <div className="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+            <Title>Поиск дешевых авиабилетов</Title>
+            <SubTitle>Лучший способ купить авиабилеты дешево</SubTitle>
+            <Form>
+              <InputBig>
+                <InputWrapper>
+                  <PlaceInput
+                    defaultValue="Москва"
+                    placeholder="Город вылета"
+                  />
+                  <IATACode>MOW</IATACode>
+                  <SwapPlaces />
+                </InputWrapper>
+              </InputBig>
+              <InputBig>
+                <InputWrapper>
+                  <PlaceInput value="" placeholder="Город прибытия" />
+                  <IATACode />
+                </InputWrapper>
+              </InputBig>
+              <InputSmall>
+                <InputWrapper>
+                  <PlaceInput value="" placeholder="Туда" />
+                  <Calendar />
+                </InputWrapper>
+              </InputSmall>
+              <InputSmall>
+                <InputWrapper>
+                  <PlaceInput value="" placeholder="Обратно" />
+                  <Calendar />
+                </InputWrapper>
+              </InputSmall>
+              <InputBig>
+                <InputWrapper>
+                  <PaxButton>
+                    1 пассажир, <PaxAdditional>эконом</PaxAdditional>
+                    <PopDownMark />
+                  </PaxButton>
+                </InputWrapper>
+              </InputBig>
+            </Form>
+          </div>
         </div>
-      </div>
-      <div className="row center-xs">
-        <div className="col-xs-12 col-md-6 col-lg-4">
-          <SubmitButton>
-            Найти билеты <img src={aero} alt="aero" />
-          </SubmitButton>
+        <div className="row center-xs">
+          <div className="col-xs-12 col-md-6 col-lg-4">
+            <SubmitButton>
+              Найти билеты <img src={aero} alt="aero" />
+            </SubmitButton>
+          </div>
         </div>
-      </div>
+      </Section>
     </div>
   </Header>
 );
