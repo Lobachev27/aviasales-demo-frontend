@@ -23,14 +23,14 @@ const OfferName = styled.div`
 const Logo = styled.img`
   flex: 0 0 auto;
   margin-right: 16px;
-  
+
   @media (min-width: 768px) {
     margin-right: 8px;
-  };
-  
+  }
+
   @media (min-width: 1024px) {
     margin-right: 12px;
-  };
+  }
 `;
 
 const Body = styled.div`
@@ -61,37 +61,37 @@ const Price = styled.div`
   text-align: right;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 `;
 
 const PriceSpan = styled.span`
   font-size: 20px;
   line-height: 16px;
-  font-weight: 300;
+  font-weight: 400;
 `;
 
 const Days = styled.div`
   text-align: right;
   font-size: 12px;
   line-height: 15px;
-  font-weight: 300;
+  font-weight: 400;
   color: #d93633;
 `;
 
 const OfferText = styled.p`
   font-size: 12px;
   line-height: 16px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 16px 0;
   margin: 0;
-  min-height: 48px ;
+  min-height: 48px;
 `;
 
 const Link = styled.a`
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   display: block;
   border: 2px solid #cd1f27;
   border-radius: 4px;

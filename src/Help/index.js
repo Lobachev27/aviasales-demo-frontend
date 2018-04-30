@@ -23,7 +23,7 @@ const Title = styled.h5`
 const Text = styled.p`
   font-size: 14px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #4a4a4a;
   margin-top: 12px;
   margin-bottom: 16px;
@@ -36,7 +36,7 @@ const Text = styled.p`
 const Link = styled.a`
   font-size: 14px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #00ace2;
   transition: 0.3s;
 

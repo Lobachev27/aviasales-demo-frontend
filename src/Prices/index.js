@@ -89,7 +89,7 @@ const Info = styled.p`
   text-align: center;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0 10px;
 
   @media (min-width: 768px) {
@@ -101,7 +101,7 @@ const Offer = styled.p`
   text-align: center;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #a0b0b9;
   padding: 0 10px 30px;
 

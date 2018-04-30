@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Destination = styled.div`
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 20px;
   border-radius: 8px 8px 0 0;
   color: #5b5b5c;

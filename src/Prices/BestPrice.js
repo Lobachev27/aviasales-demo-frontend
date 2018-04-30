@@ -19,14 +19,14 @@ const Row = styled.div`
 const CityText = styled.div`
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
 `;
 
 const PriceText = styled.div`
   color: #00bae8;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
 `;
 
 export default props => {

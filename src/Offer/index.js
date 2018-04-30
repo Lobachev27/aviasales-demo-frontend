@@ -69,7 +69,7 @@ const Footer = styled.div`
   align-items: center;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 20px;
 
   @media (min-width: 768px) {
